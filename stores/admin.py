@@ -4,8 +4,8 @@ from .models import Store
 
 class StoreAdmin(admin.ModelAdmin):
     # ...
-    list_display = ('id', 'name','description')
-    list_display_links = ('name','description')
+    list_display = ('name','description','id')
+    list_editable = ('description',)
     list_filter = ['name','description']
     search_fields = ['name']
 
